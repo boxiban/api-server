@@ -1,0 +1,30 @@
+{
+  "name": "boxiban-api",
+  "version": "1.0.0",
+  "description": "Boxiban api server with nodejs - mongodb and docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/codeindevelop/boxiban-backend.git"
+  },
+  "keywords": [
+    "boxiban",
+    "backend",
+    "nodejs",
+    "nodeapi",
+    "nodecms"
+  ],
+  "author": {
+    "email": "codeindevelopment@gmail.com",
+    "name": "Hadi Mo",
+    "url": "https://boxiban.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeindevelop/boxiban-backend/issues"
+  },
+  "homepage": "https://github.com/codeindevelop/boxiban-backend#readme"
+}

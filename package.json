@@ -2,9 +2,11 @@
   "name": "boxiban-api",
   "version": "1.0.0",
   "description": "Boxiban api server with nodejs - mongodb and docker",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,17 @@
   "bugs": {
     "url": "https://github.com/codeindevelop/boxiban-backend/issues"
   },
-  "homepage": "https://github.com/codeindevelop/boxiban-backend#readme"
+  "homepage": "https://github.com/codeindevelop/boxiban-backend#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.18"
+  }
 }

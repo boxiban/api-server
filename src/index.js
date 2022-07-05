@@ -5,6 +5,7 @@ import morgan from "morgan";
 import dotenv from "dotenv";
 import ip from "ip";
 import { sequelize } from "./config/database";
+import mainRouter from "./routes/router";
 
 const app = express();
 dotenv.config(); // implement config for load data from environment
@@ -24,6 +25,8 @@ app.use(express.static("public")); // set public folder for loading static files
 app.get("/", (req, res) => {
   res.status(200).json({ message: "system ok" });
 });
+
+app.use("/", mainRouter); // Main Router file
 
 // Return response for err or lunch app on browser
 app.listen(PORT, function (err) {

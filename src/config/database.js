@@ -9,7 +9,7 @@ export const sequelize = new Sequelize(
   "root",
   "rootpassword",
   {
-    host: "localhost",
+    host: "mysql",
     dialect: "mysql",
     port: "3306",
   }

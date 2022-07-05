@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node src/index.js"
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node src/index.js",
+    "push": "git remote | xargs -L1 git push --all"
   },
   "repository": {
     "type": "git",

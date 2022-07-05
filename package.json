@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon --exec babel-node src/index.js"
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -31,9 +31,16 @@
   "homepage": "https://github.com/codeindevelop/boxiban-backend#readme",
   "dependencies": {
     "chalk": "^5.0.1",
+    "config": "^3.3.7",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "joi": "^17.6.0"
+    "helmet": "^5.1.0",
+    "ip": "^1.1.8",
+    "joi": "^17.6.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemodule": "^0.3.0",
+    "sequelize": "^6.21.2"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",

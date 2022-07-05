@@ -4,7 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import dotenv from "dotenv";
 import ip from "ip";
-import { sequelize } from "./config/database";
+import { orm } from "./config/orm";
 import mainRouter from "./routes/router";
 
 const app = express();
@@ -18,7 +18,7 @@ if (app.get("env") === "development") {
   app.use(morgan("tiny")); // use Morgan middleware for loging in terminal
 }
 
-sequelize; // Implement Data Base
+orm; // Implement Data Base
 
 app.use(express.static("public")); // set public folder for loading static files
 
@@ -33,9 +33,9 @@ app.listen(PORT, function (err) {
   if (err) console.log(err);
   console.clear();
   console.log(
-    `\n 👋 Boxiban is running at : ${chalk.green(
-      `https://localhost:${PORT} 🤪`
+    `\n 👋  Boxiban is running at : ${chalk.green(
+      `https://localhost:${PORT}`
     )} `,
-    `\n \n 👉 runing on network     : ${chalk.green(ip.address())}`
+    `\n \n 👉  runing on network     : ${chalk.green(ip.address())}`
   );
 });
